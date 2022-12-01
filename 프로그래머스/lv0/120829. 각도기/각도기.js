@@ -1,6 +1,3 @@
 function solution(angle) {
-    if(angle === 180) return 4;
-    else if(angle > 90 && angle<180) return 3;
-    else if(angle === 90) return 2;
-    else return 1;
+    return angle===180 ? 4 : angle<180 && angle>90 ? 3 : angle===90 ? 2 : 1
 }
