@@ -13,6 +13,7 @@ function solution(chicken) {
     // 서비스>9 때까지만 반복
     while(coupon > 9){
         sv += Math.floor(coupon/10)
+        // 113마리 -> 11마리+남은3장 -> 쿠폰개수
         coupon = Math.floor(coupon/10) + coupon%10
     }
     return sv
