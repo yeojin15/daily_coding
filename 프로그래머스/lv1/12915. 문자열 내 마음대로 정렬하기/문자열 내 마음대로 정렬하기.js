@@ -11,3 +11,9 @@ function solution(strings, n) {
     })
     return strings
 }
+/*
+return strings.sort((s1, s2) => 
+    s1[n] === s2[n] // 내부 인덱스를 가지고 비교하는데
+    ? s1.localeCompare(s2) // 내부 character 가 같으면 전체 string 을 비교하고 
+    : s1[n].localeCompare(s2[n])); // 내부 character 가 다르면 내부 character 을 비교
+*/
